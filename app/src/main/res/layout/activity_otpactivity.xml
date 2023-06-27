@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quiz_login_final_02"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/display_logo"
+        android:layout_width="240dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/logo2"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@id/display_goldenAZ"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/display_goldenAZ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textSize="34dp"
+        android:textColor="@color/golden"
+        android:textAlignment="center"
+        android:text="Golden AZ"
+        android:textAllCaps="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/display_logo"
+        tools:layout_editor_absoluteY="264dp"
+        android:background="@drawable/edit_background"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/display_enter_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/quiz_login_final_05"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/display_goldenAZ"/>
+
+    <TextView
+        android:id="@+id/fillotp_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="textview"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/varify_button" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/firstPinView"
+        style="@style/PinWidget.PinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        android:cursorVisible="true"
+        android:gravity="center"
+        android:hint="hint pinview"
+        android:inputType="number"
+        android:itemBackground="#65EAEAEA"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cursorColor="@android:color/black"
+        app:hideLineWhenFilled="true"
+        app:itemCount="6"
+        app:itemHeight="35dp"
+        app:itemRadius="5dp"
+        app:itemWidth="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/display_enter_number"
+        app:lineWidth="1dp"
+        app:viewType="rectangle"
+        tools:ignore="MissingClass" />
+
+    <Button
+        android:id="@+id/varify_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Varify"
+        android:textSize="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstPinView"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_background"
+        android:onClick="verifyOTPBtn"
+        android:padding="10dp"
+        android:paddingLeft="44dp"
+        android:paddingStart="44dp"
+        android:paddingRight="44dp"
+        android:paddingEnd="44dp"/>
+
+    <ProgressBar
+        android:id="@+id/verifyprogressbar2_id"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="16dp"
+        android:theme="@style/AppTheme.WhiteAccent"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/varify_button"
+        app:layout_constraintEnd_toEndOf="@id/varify_button"
+        app:layout_constraintTop_toTopOf="@id/varify_button" />
+
+    <ImageView
+        android:id="@+id/display_term_and_condition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/quiz_login_final_10"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/varify_button"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".attendance.ShiftEntryActivity">
+
+    <TextView
+        android:id="@+id/tv_emp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Name"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="24dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textSize="16dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_emp_name"/>
+
+    <TextView
+        android:id="@+id/tv_emp_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Id"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="24dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_emp_name" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Id"
+        android:textSize="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="70dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:layout_constraintLeft_toRightOf="@id/tv_emp_id"/>
+
+    <TextView
+        android:id="@+id/tv_emp_shift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shift"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="24dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_emp_id" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/shift_item"
+        app:layout_constraintLeft_toRightOf="@id/tv_emp_shift"
+        app:layout_constraintTop_toBottomOf="@id/tv_id" />
+
+    <TextView
+        android:id="@+id/tv_emp_shift_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="24dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_emp_shift" />
+
+    <TextView
+        android:id="@+id/tv_emp_shift_time_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To: "
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="24dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_emp_shift_time" />
+
+    <TextClock
+        android:id="@+id/clock_to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="hh:mm"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="09:00"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toRightOf="@id/tv_emp_shift_time_to"
+        app:layout_constraintTop_toBottomOf="@id/tv_emp_shift_time"/>
+
+    <TextView
+        android:id="@+id/tv_emp_shift_time_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From: "
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="80dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/clock_to"
+        app:layout_constraintTop_toBottomOf="@id/tv_emp_shift_time" />
+
+    <TextClock
+        android:id="@+id/clock_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format12Hour="hh:mm"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="05:00"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toRightOf="@id/tv_emp_shift_time_from"
+        app:layout_constraintTop_toBottomOf="@id/tv_emp_shift_time"/>
+
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remark"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_emp_shift_time_to" />
+
+    <EditText
+        android:id="@+id/ed_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Remark"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="100dp"
+        app:layout_constraintLeft_toRightOf="@id/tv_remark"
+        app:layout_constraintTop_toBottomOf="@id/tv_emp_shift_time_to"/>
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="60dp"
+        android:background="@color/green"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_remark"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

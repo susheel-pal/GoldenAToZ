@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "15228997078",
+    "project_id": "goldenatoz-2a2de",
+    "storage_bucket": "goldenatoz-2a2de.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15228997078:android:0babbe41294e20d87b6877",
+        "android_client_info": {
+          "package_name": "com.example.goldenatoz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15228997078-d7mqvsftpj95fgrqu111toi7k3e4e3nc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.goldenatoz",
+            "certificate_hash": "19a013ae74e7e1cf82acd60f3c3af470e7d06cff"
+          }
+        },
+        {
+          "client_id": "15228997078-8anjtc9qk1r0basbckeqs0q3msfdc779.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrnDMBTA5l05L7ofCbHqZ-qgQDjBlckTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15228997078-8anjtc9qk1r0basbckeqs0q3msfdc779.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

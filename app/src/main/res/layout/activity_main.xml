@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/login_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign In Time: "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/logout_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Out Time: "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_time"/>
+
+    <Button
+        android:id="@+id/getLocation2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go To Location Page"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logout_time" />
+
+    <Button
+        android:id="@+id/go_to_shift"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go To Shift Entry Screen"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/getLocation2" />
+
+    <Button
+        android:id="@+id/btn_attendance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Attendance"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/go_to_shift" />
+
+    <Button
+        android:id="@+id/holiday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Holiday"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_attendance" />
+
+    <Button
+        android:id="@+id/your_role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your Role"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/holiday" />
+
+    <Button
+        android:id="@+id/languages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Languages"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/your_role" />
+
+    <Button
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TabLayout"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/languages" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tabLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
